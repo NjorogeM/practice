@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use View;
 use Illuminate\Http\Request;
 use \App\Project;
 
@@ -33,13 +33,15 @@ class ProjectsController extends Controller
 
 
   }
- public function edit()
+ public function edit($id)
  {
+
    $project = Project::find($id);
-   return view('projects.edit');
+   return View::make('projects.edit')->with(array('project'=>$project));
  }
+
   public function show()
   {
-    return view('projects.edit');
+  
   }
 }

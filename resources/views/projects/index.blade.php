@@ -4,6 +4,7 @@
 <h1>Projects</h1>
 
 @foreach($projects as $project)
-<li> {{ $project->title }}</li>
+<ul class="list-group">
+<li class="list-group-item"> {{ $project->title }}</li>
 @endforeach
 @endsection

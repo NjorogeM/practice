@@ -5,17 +5,17 @@
 
   <form class="" action="index.html" method="post">
     <div class="feild">
-      <label class="label" for="Title"></label>
+      <label class="label" for="Title">Title</label>
 
       <div class="control">
-        <input type="text" name="title" value="Title">
+        <input type="text" class= "input" name="title" value="{{ $project->title}}">
 
       </div>
     </div>
     <div class="feild">
-      <label class="label"for="description">Description</label>
+      <label class="label"for="description"></label>
       <div class="control">
-        <textarea name="description" class="textarea" rows="8" cols="80"></textarea>
+        <textarea name="description" class="textarea" rows="8" cols="80">{{ $project->description }}</textarea>
 
       </div>
     </div>
