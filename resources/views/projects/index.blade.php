@@ -5,6 +5,10 @@
 
 @foreach($projects as $project)
 <ul class="list-group">
-<li class="list-group-item"> {{ $project->title }}</li>
+<li class="list-group-item">
+<a href="/projects/{{$project->id}}">
+ {{ $project->title }} 
+{{$project->description}}
+</li>
 @endforeach
 @endsection
